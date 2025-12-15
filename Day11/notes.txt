@@ -1,0 +1,43 @@
+Two types of units in css :-
+1) absolute :- fixed(doesn't dpend on a factor)
+    px,pt,cm,mm,in
+
+2) Relative units :- Depends on a factor
+   %,vw,vh,rem,em,vmin,vmax (1st 4 very imp (rem,em)mostly used) 
+
+
+*) viewport => vo area jo browser hame deta hai, hamari website show krne ke liye
+
+vw => viewport width
+vh => viewport height
+ 
+ let's assume :- 
+
+ viewport width = 600px 
+ 
+100vw = 600px
+1vw = 6px (same concept for viewport height)
+
+
+*) rem :- root em (sirf root element ke font size pr depend karega aur root html element ko bolenge)
+
+assume :-
+html{
+    font-size = 100px
+}
+h1{
+    font-size = 1rem // 1rem = 100px
+}
+
+*) em :- jo bhi sabse nearest anscestor hoga uspe depend karega 
+assume:-
+              html  >  body  >  main  >  h1
+ font-size:- (50px)   (60px)   (70px)   (1em) 1em = 70px here
+
+ *) % :- depends on parent element 
+
+ *) clamp function :- clamp(min,value,max)
+        
+         h1 {
+         font-size: clamp(10px, 3vw, 40px);
+            }

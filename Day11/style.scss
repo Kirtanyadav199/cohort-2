@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+html{
+    font-size:100px ;
+}
+body{
+    font-size: 20px;
+}
+main{
+    font-size: 5em;
+}
+h1{
+    font-size: clamp(10px, 3vw, 40px);
+}
