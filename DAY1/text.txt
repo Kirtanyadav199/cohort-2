@@ -1,0 +1,9 @@
+DOM - Document object model (frontend ki JS)
+
+
+ 4 pillar of DOM :-
+
+1. Selection of an HTML Element 
+2. Changing HTML
+3. Changing CSS
+4. Adding event listner
