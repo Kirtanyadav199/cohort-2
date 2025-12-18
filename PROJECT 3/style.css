@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+height: 100%;
+width: 100%;
+background-color: black;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+.cursor{
+    height: 50px;
+    width: 50px;
+    mix-blend-mode: difference;   /* Color overlap hone par result color kya hoga  */
+    border-radius: 50%;
+    background-color:white;
+    position: absolute; 
+    transform: translate(-50%,-50%);  /* curse center me aa jata hai */
+    
+}
+
+
+
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 13vw;
+    color: white;
+}
+
+
+
