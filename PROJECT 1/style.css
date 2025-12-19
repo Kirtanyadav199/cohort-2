@@ -50,4 +50,9 @@ body{
     border-radius: 5px;
     background-color: royalblue;
     margin-top: 15px;
+    transition: all ease 0.3s;
+}
+
+.card button:active{
+    scale: .90;
 }

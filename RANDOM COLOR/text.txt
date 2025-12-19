@@ -1,0 +1,4 @@
+::active :- ye bhi hower jesi hoti hai par hover me jab mause le jate to property hoti aur isme jab click krte tab hoti
+
+
+note :- project banate time direct final chiz nhi banani chhaiye ya uspe jump nhi krna chahiye choti choti chijze step by step krni chahiye, jese console,og krke print krwa kr dekh liya aur ese hi small steps
