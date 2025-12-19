@@ -1,0 +1,3 @@
+document.createElement('') :- isse haam JS ke through hi direct naya element create kr lete hain HTML ka, par ye banaya hua element ya uske andar ka data sirf console pr hi dikhta hai screen par nahi
+
+appendChild() :- isse ham hamare created element ko actual me HTML ke andar place kr sakte hain , main.appendChild => matlab main ke andar daal do 

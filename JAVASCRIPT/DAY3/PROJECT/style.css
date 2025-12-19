@@ -1,0 +1,40 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  height: 100%;
+  width: 100%;
+
+}
+body{
+  overflow: hidden;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+button{
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+    background-color: crimson;
+    transition: all ease 0.2s;
+    border-radius: 3px;
+    position: relative;
+    z-index: 9;
+
+}
+button:active{
+    scale: 0.90;
+}
