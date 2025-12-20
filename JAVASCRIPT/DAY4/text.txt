@@ -1,0 +1,7 @@
+setTimeOut() :- code me delay laane ke liye use hota hai, mtlb ek specific task ke upr timer lag jata hai phir vo task us time T ke baad hi execute hota hai  
+
+setInterval() :- ye loop ke jaisa hota hai, ek task ko certain time duration T ke interval pr execute krta hi rehta hai jab tk ise band na kro
+
+clearInterval() :- isse setInterval ko rokte hain
+
+.style.pointerEvents = 'none'  :- kisi bhi div ya button pr event listner laga kr ham kuch bhi function execute krte hain, to isko use krne se vo saare events disable ho jate hain, yani ki button ya div disable ho jata hai aur phir task perform nhi krta
