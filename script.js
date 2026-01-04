@@ -53,62 +53,9 @@ const reels = [
     isLiked: true,
     isFollowed: true,
     video: "Reels/5.mp4"
-  },
-  {
-    username: "daily_quotes",
-    userProfile: "https://randomuser.me/api/portraits/women/21.jpg",
-    caption: "Slow progress is still progress 🌱",
-    likeCount: 1680,
-    commentCount: 101,
-    shareCount: 59,
-    isLiked: false,
-    isFollowed: false,
-    video: "Reels/6.mp4"
-  },
-  {
-    username: "gym_motivation",
-    userProfile: "https://randomuser.me/api/portraits/men/90.jpg",
-    caption: "Train your mind before your body 🧠",
-    likeCount: 5120,
-    commentCount: 426,
-    shareCount: 312,
-    isLiked: true,
-    isFollowed: true,
-    video: "Reels/7.mp4"
-  },
-  {
-    username: "tech_updates",
-    userProfile: "https://randomuser.me/api/portraits/men/55.jpg",
-    caption: "AI future nahi, present hai 🤖",
-    likeCount: 910,
-    commentCount: 74,
-    shareCount: 37,
-    isLiked: false,
-    isFollowed: false,
-    video: "Reels/1.mp4"
-  },
-  {
-    username: "minimal_vibes",
-    userProfile: "https://randomuser.me/api/portraits/women/48.jpg",
-    caption: "Less chaos, more clarity ✨",
-    likeCount: 1390,
-    commentCount: 92,
-    shareCount: 51,
-    isLiked: true,
-    isFollowed: true,
-    video: "Reels/4.mp4"
-  },
-  {
-    username: "night_thoughts",
-    userProfile: "https://randomuser.me/api/portraits/men/19.jpg",
-    caption: "Late nights, deep thoughts 🌌",
-    likeCount: 690,
-    commentCount: 41,
-    shareCount: 18,
-    isLiked: false,
-    isFollowed: false,
-    video: "Reels/2.mp4"
   }
+ 
+ 
 ];
 
 let allReels = document.querySelector('.all-reels')
@@ -123,7 +70,7 @@ sum += `   <div class="reel">
                         <div class="user">
                             <img src="${elem.userProfile}" alt="">
                             <h4>${elem.username}</h4>
-                            <button>${elem.isFollowed?'Unfollow':'Follow'}</button>
+                            <button id="${idx}" class="followbtn">${elem.isFollowed?'Unfollow':'Follow'}</button>
                         </div>
                         <h3>${elem.caption}</h3>
                     </div>
@@ -159,8 +106,26 @@ allReels.innerHTML = sum
 addData()
 
 allReels.addEventListener("click",function(dets){
-  console.log(dets);
-  
+  if(dets.target.className == "like"){
+    if(reels[dets.target.id].isLiked){
+    reels[dets.target.id].likeCount--
+    reels[dets.target.id].isLiked = false
+    }else{
+    reels[dets.target.id].likeCount++
+    reels[dets.target.id].isLiked = true
+    }
+  }
+  addData()
+  if(dets.target.className == "followbtn"){
+    if(reels[dets.target.id].isFollowed){
+       reels[dets.target.id].isFollowed = false
+    }else{
+       reels[dets.target.id].isFollowed = true
+    }
+  }
+  addData()
+ 
+ 
   
 })
 
