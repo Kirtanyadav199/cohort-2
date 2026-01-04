@@ -118,7 +118,7 @@ function addData(){
 let sum = ``
 reels.forEach(function(elem,idx){
 sum += `   <div class="reel">
-                   <video autoplay loop muted  src="${elem.video}"></video>
+                   <video loop muted autoplay src="${elem.video}"></video>
                     <div class="bottom">
                         <div class="user">
                             <img src="${elem.userProfile}" alt="">
@@ -157,6 +157,12 @@ allReels.innerHTML = sum
 }
 
 addData()
+
+allReels.addEventListener("click",function(dets){
+  console.log(dets);
+  
+  
+})
 
 
 
