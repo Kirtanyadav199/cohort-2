@@ -153,3 +153,26 @@ color: red;
     pointer-events: none;
 }
 
+.mute{
+    background-color: #333;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position:absolute;
+    top: 10px;
+    right: 10px;
+    
+}
+
+.mute:active{
+    scale: 0.93;
+}
+.mute i{
+    font-size: 27px;
+ pointer-events: none;
+
+}

@@ -8,7 +8,8 @@ const reels = [
     shareCount: 42,
     isLiked: true,
     isFollowed: true,
-    video: "Reels/1.mp4"
+    video: "Reels/1.mp4",
+    isMuted: true
   },
   {
     username: "code_with_rahul",
@@ -19,7 +20,8 @@ const reels = [
     shareCount: 28,
     isLiked: false,
     isFollowed: false,
-    video: "Reels/2.mp4"
+    video: "Reels/2.mp4",
+    isMuted: true
   },
   {
     username: "fit_life_daily",
@@ -30,7 +32,8 @@ const reels = [
     shareCount: 132,
     isLiked: true,
     isFollowed: true,
-    video: "Reels/3.mp4"
+    video: "Reels/3.mp4",
+    isMuted: true
   },
   {
     username: "travel_diaries",
@@ -41,7 +44,8 @@ const reels = [
     shareCount: 20,
     isLiked: false,
     isFollowed: false,
-    video: "Reels/4.mp4"
+    video: "Reels/4.mp4",
+    isMuted: true
   },
   {
     username: "frontend_guru",
@@ -52,7 +56,8 @@ const reels = [
     shareCount: 79,
     isLiked: true,
     isFollowed: true,
-    video: "Reels/5.mp4"
+    video: "Reels/5.mp4",
+    isMuted: true
   }
  
  
@@ -65,7 +70,10 @@ function addData(){
 let sum = ``
 reels.forEach(function(elem,idx){
 sum += `   <div class="reel">
-                   <video loop muted autoplay src="${elem.video}"></video>
+                   <video loop ${elem.isMuted ? 'muted': ''} autoplay src="${elem.video}"></video>
+                     <div class="mute" id="${idx}">
+                <i class="ri-volume-mute-fill"></i>
+                    </div>
                     <div class="bottom">
                         <div class="user">
                             <img src="${elem.userProfile}" alt="">
@@ -124,6 +132,16 @@ allReels.addEventListener("click",function(dets){
     }
   }
   addData()
+
+  if(dets.target.className == "mute"){
+    if(reels[dets.target.id].isMuted){
+       reels[dets.target.id].isMuted = false
+    }else{
+       reels[dets.target.id].isMuted =true
+    }
+    addData()
+  }
+  
  
  
   
