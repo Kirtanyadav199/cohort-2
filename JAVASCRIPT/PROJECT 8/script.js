@@ -72,7 +72,7 @@ function showProducts(){
   let clutter = '';
   products.forEach(function(val,idx){
     clutter += ` <div class="product"> 
-        <i data-index="${idx}" id="${idx}" class=" add       ri-shopping-cart-2-fill"></i>
+        <i data-index="${idx}" id="${idx}" class=" add       ri-add-large-line"></i>
         <img src="${val.photo}" alt="">
         <h2>${val.name}</h2>
         <h3>&#8377; ${val.price}</h3>
