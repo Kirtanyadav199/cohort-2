@@ -1,0 +1,1 @@
+inheritace :- agar koi class hai jisme ki kuch kkuch likha hai, aur agar ham new class bna rahe hain jsime ki old class ke features ki need raehgi to ham borrow kr lete hain old class ke features ko and new class me naye features bhi bana sakte hain

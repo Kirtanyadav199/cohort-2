@@ -1,0 +1,16 @@
+constructor :- - Constructor ek function hai jo ki object bante time hi by default run ho jata hai, ise alag se call nhi karna padta.ek class me ek hi constructor hoga
+- 2 types ke hote hain : 1) Normal  2) Parameterised
+
+Prototypes :- jab ham object create krte hain to jo chize controctor me hoti hai vo har object ki khud ki hoti hai, jese naam , color, price but jo chize common hoti hai jese ki functions like walk, run to ye to har object ke honge hi, esliye inhe constructor ke bahar likhte hain taki ye shared memory le , mtlb ki har baar har object ke liye alg function like walk, run create nhi hoga, khi shared memory me ye functions rakhe honge aur har object un functions ko vhi se access kr lega, by the way constructor ke bahr jo bhi likhte hain vo shared memeory me hi jata hai, isi likhe hue ko prototype bolte hain
+
+
+this :- math.pi ek predifend chize hai aur iski value fix hai, lekin ye jo this hai iski value hamesha change hoti rehti hai, har chiz ke respect me, jaise globally ham this ki value print karwaenge to window aayegi, kisi object ke andar karwayenge to vhi object aayega, mtlb jis chiz ke respect me ham baat krte us time this ki value vhi hoti hai, jaise hath me pen hai, to this ki value pen hi hogi na, rubber thodi ho jayega
+
+
+call,bind,apply :- normally kisi function me this ki value dekhte to window aati hai, pr agar ham chahte hai ki object aaye to iska use rkte hain
+
+call :- function chalata hai and this ki value set krta hai
+
+apply :- wahi krta hai jo Call krta hai, and arguments me pehli value this ki and dusri value array hoti hai 
+
+bind :- whi krta hai jo call krta hai, pr  ye ek function return krta hai, mtlb ek varial me isko store krte hain aur vo varial funcin ban jata ahi , jab ham us varial ko call krte tab ye bind fucntion kam krta hai 
