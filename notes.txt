@@ -1,0 +1,10 @@
+-> JS ek single threaded language hai
+
+-> mtlb, unlike many other multithreaded language jo ek baar me ek se jyada kam krti hai, JS ek baar me ek hi kaam krti hai
+
+-> manlo apne pehli line me hello print karwaya, dusri line me ek file read krne ke liye bola aur teesri line me phirse hello print karwaya ab teesri line ka hello jab tak print nhi hoga jab tk dusri line wali file read na ho jaye, isse code me kafi delay ho jata hai, aur manlo agar koi esi chiz ho jo jyada time le to aage ka code nhi run hota jitte ki esa lgta hai ki program freeze ho gya, isi ko "synchronous" approach kehte hain,JS me yhi hoti hai 
+
+-> ab manlo ki esa ho jaye ki pehli line execute ho, phir dusri apne hisab se kam krti rahe lekin code na ruke aur tab tk teesri line execute ho jaye, isi ko "asynchronous" approach kehte hain
+
+-> callback-function: vo function jo baad me call hoga, abhi nhi, isko special functions jese setTimeOut , setInterval ke andar diya jata hai esliye iski defination hoti hai, "A function you give to another function so it can be called later"
+
