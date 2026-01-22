@@ -6,5 +6,7 @@
 
 -> ab manlo ki esa ho jaye ki pehli line execute ho, phir dusri apne hisab se kam krti rahe lekin code na ruke aur tab tk teesri line execute ho jaye, isi ko "asynchronous" approach kehte hain
 
--> callback-function: vo function jo baad me call hoga, abhi nhi, isko special functions jese setTimeOut , setInterval ke andar diya jata hai esliye iski defination hoti hai, "A function you give to another function so it can be called later"
+-> callback-function: vo function jo baad me call hoga, abhi nhi, isko special functions jese setTimeOut , setInterval ke andar diya jata hai esliye iski defination hoti hai, "A function you give to another function so it can be called later", ya ek fucntion jo ki kuch hone pr chalega, jese "click" event hone pr chala fucntion, 3ses khatam hone ke baad chala function
+
+
 
