@@ -1,0 +1,17 @@
+promises :- callbacks me code bohot messy ho gya tha and ham error handle nhi kr pate the, esliye promises use krte hain, iske 3 states hote hain
+1) Pending :- jab kam ho raha ho 
+2) Resolve :- jab kaam ho jaye
+3) Reject :- jab kaam na ho paye (error aa jaye)
+
+ex :- facbookSeDataLaao(){} => 
+Pending -> jab data la raha hoga
+Resolve -> jab data aa jaye
+Reject -> jab data na aaye
+
+-> Resolve ke liye .then(),try{}
+-> Reject ke liye .catch(),catch{}
+
+fetch :- fetch() se kisi bhi url pr jaa sakte hain
+-> fetch ke pass jo data aata hai vo readable nhi hota hai
+-> us data ko .json() krke ham json format me late hain
+-> iske baad jo data aata hai vo readble hota hai
