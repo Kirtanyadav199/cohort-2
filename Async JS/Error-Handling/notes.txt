@@ -1,0 +1,4 @@
+finally :- jab try chale ya catch chale but uske baad me kuch kaam esa hai jo must krna hai to usko finally me daal dete hain, mtlb error aaye ya na aye ye kaam to krna hi hai
+ex -> jaise kisi website pr hame loader ghumte dikhta hai, ab jab website load hogi to bhi loader hatega hi aur load na hui to bhi loader hatkr error sow hoga ki "slow internet" or etc
+
+throw new Error() :- jab hamko khud ka manually banaya hua error show krna hota hai screen pr to ham catch ke andar isko daal kr iske andar error likh dete hain
