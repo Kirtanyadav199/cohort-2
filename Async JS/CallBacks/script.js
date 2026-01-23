@@ -65,6 +65,40 @@
 
 
 
+//         Question 3
+
+function loginUser(username,cb){
+    console.log("Logging user...")
+setTimeout(() => {
+    cb({
+   id: 113,
+   username:"kirtan"
+    })
+}, 1000);
+}
+
+function fetchPermissions(userId,cb){
+    console.log("Fetching Permissions...");
+    
+    setTimeout(() => {
+        cb([1,2,3])
+    }, 1000);
+
+}
+function loadDashBoard(Permissions,cb){
+    console.log("loading dashboard");
+setTimeout(() => {
+    cb()
+}, 1000);
+}
+
+loginUser("kirtan",function(userData){
+fetchPermissions(userData.id,function(Permissions){
+ loadDashBoard(Permissions,function(){
+console.log("DashBoard Loaded")
+ })
+})
+})
 
 
 
