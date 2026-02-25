@@ -1,0 +1,8 @@
+* ye import export feature jo hai Java script module system(ECMAScript Modules) ke andar aata hai, 2015 me ES6 ke andar introduce kiya gya tha
+
+export 2 types ke hote hain :- 1) default export 
+                               2) named export 
+
+default export:- har ek file JS me bs ek hi default export kr sakti hai, usse jyada nahi
+
+name export :- multiple kiye jaa sakte hain
